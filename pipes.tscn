@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkdqwidyci7k0"]
+
+[ext_resource type="Script" path="res://pipes_move.gd" id="1_phcna"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_14ypd"]
+size = Vector2(90, 238)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_pa153"]
+
+[node name="Pipes" type="RigidBody2D"]
+position = Vector2(913, 309)
+gravity_scale = 0.0
+lock_rotation = true
+freeze = true
+freeze_mode = 1
+linear_velocity = Vector2(-50, 0)
+linear_damp_mode = 1
+script = ExtResource("1_phcna")
+metadata/_edit_horizontal_guides_ = [328.0]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(35, -216.5)
+shape = SubResource("RectangleShape2D_14ypd")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D2"]
+position = Vector2(3.8147e-06, -3.63589e-06)
+scale = Vector2(90, 253)
+texture = SubResource("PlaceholderTexture2D_pa153")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(35, 209)
+shape = SubResource("RectangleShape2D_14ypd")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D3"]
+position = Vector2(3.8147e-06, -3.63589e-06)
+scale = Vector2(90, 253)
+texture = SubResource("PlaceholderTexture2D_pa153")
