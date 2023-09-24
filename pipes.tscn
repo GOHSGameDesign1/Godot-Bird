@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://pipes_move.gd" id="1_phcna"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14ypd"]
-size = Vector2(90, 238)
+size = Vector2(90, 254.5)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_pa153"]
 
@@ -19,7 +19,8 @@ script = ExtResource("1_phcna")
 metadata/_edit_horizontal_guides_ = [328.0]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(35, -216.5)
+position = Vector2(36, -446)
+scale = Vector2(1.12224, 2.67237)
 shape = SubResource("RectangleShape2D_14ypd")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D2"]
@@ -28,7 +29,8 @@ scale = Vector2(90, 253)
 texture = SubResource("PlaceholderTexture2D_pa153")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(35, 209)
+position = Vector2(36, 446)
+scale = Vector2(1.12224, 2.67237)
 shape = SubResource("RectangleShape2D_14ypd")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D3"]

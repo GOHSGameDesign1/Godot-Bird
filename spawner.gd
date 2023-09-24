@@ -1,6 +1,6 @@
 extends Label
 
-# @export 
+@export var pipe_scene: PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,3 +14,9 @@ func _process(delta):
 	
 func _on_timer_timeout():
 	print("timer done")
+	var pipe = pipe_scene.instantiate()
+	
+	var pipe_spawn_location = Vector2(220, -230)
+	pipe.position = pipe_spawn_location
+	
+	add_child(pipe)

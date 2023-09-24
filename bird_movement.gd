@@ -7,5 +7,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_pressed("Jump"):
+	if Input.is_action_just_pressed("Jump"):
 		linear_velocity = Vector2(0, -300)
+
+
+func _on_body_entered(body):
+	# set_process(not is_processing())
+	queue_free()
